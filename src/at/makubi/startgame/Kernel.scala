@@ -9,9 +9,6 @@ object Kernel extends TimerTask {
   var round: Int = 1
 
   def run() {
-    while(true) {
-      Thread sleep roundTimeMillis
       round += 1
-    }
   }
 }

@@ -10,8 +10,7 @@ object StarTGame extends App {
 
   kernelTimer scheduleAtFixedRate (Kernel, 0, Kernel.roundTimeMillis)
 
-  playerList = new Player("Player 1") :: playerList
-  playerList = new Player("Player 2") :: playerList
+  playerList = Player("Player 1") :: Player("Player 2") :: playerList
 
   Statistics printGameStatisticsTimed this
 

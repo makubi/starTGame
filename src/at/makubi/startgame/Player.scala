@@ -1,5 +1,5 @@
 package at.makubi.startgame
 
-class Player(val name: String) {
-  var score = 0
+case class Player(val name: String, var score: Int = 0) {
+
 }
